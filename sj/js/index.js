@@ -1,4 +1,4 @@
-    //sj.js
+   /* //sj.js
 	var slicebox;
 	$(document).ready(function() {
 	  	slicebox = $('#sb-slider').slicebox({  
@@ -52,7 +52,7 @@
 					return { init : init };
 			})();
 			Page.init();
-		});
+		});*/
 		//轮播
 		$(document).ready(function() {
 			var swiper = new Swiper('.swiper-container', {			
@@ -64,6 +64,8 @@
 		        effect:'fade',
 		        nextButton: '.swiper-button-next',
 		        prevButton: '.swiper-button-prev',
+		        autoplay:6000,
+		        speed:1000,
 		    });
 		});
 
