@@ -20,8 +20,7 @@
 		
 		//监听加载状态改变
 		var str = getCookie('NewData');
-		alert(str);
-		if(!str){
+		if(str!="loading"){
 	        document.onreadystatechange = function(){
 	        	var loadingMask = document.getElementById('preloader');
 	        	if (document.readyState == "complete") {
