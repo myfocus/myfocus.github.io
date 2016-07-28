@@ -18,20 +18,23 @@
 	<script type="text/javascript">
 		//loading
 		
-		//监听加载状态改变
-		var str = getCookie('NewData');
-
-		if(str=="loading"){
-			
-	        document.onreadystatechange = function(){
-	        	var loadingMask = document.getElementById('preloader');
-	        	if (document.readyState == "complete") {
-	                //加载状态为complete时loading效果
-	                loadingMask.parentNode.removeChild(loadingMask);
-	                addCookie('NewData','loading',1);
-	            }
-	        };
-        }   
+		window.onload=fucntion(){
+			//监听加载状态改变
+			var str = getCookie('NewData');
+			if(str!="loading"){	
+		        document.onreadystatechange = function(){
+		        	var loadingMask = document.getElementById('preloader');
+		        	if (document.readyState == "complete") {
+		                //加载状态为complete时loading效果
+		                loadingMask.parentNode.removeChild(loadingMask);
+		                addCookie('NewData','loading',1);
+		            }
+		        };
+	        }else{
+	        	loadingMask.parentNode.removeChild(loadingMask);
+	        }  
+		}
+		 
 	</script>
 </head>
 <body class="preload">
