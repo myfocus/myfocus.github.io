@@ -298,7 +298,7 @@
 		text-align:left;
 	}
 
-	.au_left a{ 
+	.au_left .aboutsj{ 
 		display:block;
 		width:160px;
 		height:40px;
@@ -312,7 +312,7 @@
 		background-color:#fff;
 		margin:0 auto 30px;
 	}
-	.au_left a:hover{
+	.au_left .aboutsj:hover{
 		-webkit-animation:bg_opacity 0.4s ease-out forwards;
 	    -moz-animation:bg_opacity 0.4s ease-out forwards;
 	    animation:bg_opacity 0.4s ease-out forwards;
@@ -320,6 +320,10 @@
 		color:#fff;
 		border:1px solid rgba(237,28,36,0.78);
 
+	}
+	.au_left .skill_a{
+		width:100%;
+		display:block;
 	}
 	.aboutUsPic{
 		width:100%;
@@ -761,9 +765,11 @@
 	/* map */
 
 	.myaddress{ 
-		width:1200px;
-		margin:30px auto;
-		background-color:#fff;
+	 	width: 1200px;
+	    margin: 0px auto 60px;
+	    background-color: #fff;
+	    position: relative;
+	    top: 30px;
 	}
 	.address{
 		width:100%;
