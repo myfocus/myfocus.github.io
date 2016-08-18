@@ -279,8 +279,8 @@
 		padding-top:24px;
 		padding-bottom:16px;
 		font-size:35px;
-		color:#000;
-		opacity: 0.5;
+		color:#ed1c24;
+		
 	}
 	.au_left .au_titCN{ 
 		width:100%;
@@ -559,11 +559,11 @@
 	}
 	.contact_box{
 		padding-left: 50%;
-    	font-size: 14px;
-    	line-height: 28px;
+    	font-size: 18px;
+    	line-height: 32px;
 	}
 	.contact_box .title{
-		font-size: 30px;
+		font-size: 32px;
     	padding: 0 0 20px 0;
 	}
 	.contact_box .e_mail{
@@ -602,21 +602,21 @@
 
 	}
 	.contact_us_centerL{ 
-		width:275px;
+		width:310px;
 		float:left;
-		margin:20px 100px;
+		margin:20px 30px;
 	}
 	
 	.contact_us_centerL dt{
 	    margin-bottom: 10px;
 	    color: #333;
-	    font-size: 16px;
+	    font-size: 18px;
 	    line-height: 20px;
 	    font-family: "微软雅黑";
 	}
 	.contact_us_centerL dd{
 		float: left;
-	    width: 100px;
+	    width: 114px;
 	    margin-right: 35px;
 	    display: inline;
 	    border-bottom: 1px dashed #666;
@@ -624,35 +624,27 @@
 	}
 	.contact_us_centerL dd a{
 	    color: #333; 
-	    font-size: 12px;
+	    font-size: 14px;
 	    line-height: 28px;
 	}
 	.contact_us_centerL dd a:hover{
 		color:#ed1c24;
 	}
 	.contact_us_centerC{ 
-		width:275px;
-		margin-right:50px;
-		float:left;
-		margin-top:20px;
-		margin-bottom:20px;
-	 }
-	.contact_us_centerC h3{ 
-	 	width: 275px;
-	    margin-bottom: 10px;
-	    color: #333;
+		width: 390px;
+	    height: 130px;
+	    float: left;
 	    font-size: 16px;
-	    line-height: 20px;
-	    font-family: "微软雅黑";
-	   
+	    color: #ed1c24;
+	    line-height: 50px;
+	    margin-top: 46px;
+    	margin-right: 50px;
 	}
-	.contact_us_centerC p{ 
-	    margin-top: 5px;
-	    width: 275px;
-	    color: #999;
-	    font-size: 12px;
-	    line-height: 22px;
-	    font-family: "微软雅黑";
+	
+	
+	.contact_us_centerC span{ 
+	    color: #ed1c24;
+    	font-size: 36px;
 	}
 	.contact_us_centerR{ 
 		float:left;
@@ -952,7 +944,7 @@
 	}
 
 	.company_nectright p,.com_nect p{
-	    font-size: 14px;
+	    font-size: 16px;
 	    color: #666;
 	    line-height: 26px;
 		text-indent:2em;
