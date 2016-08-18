@@ -255,6 +255,7 @@
 	    min-width:1200px;
 	    margin: 0 auto;
 	    background-color:#ffffff;
+	    padding-top: 30px;
 	}
 	/* .aboutUs_title{
 	    text-align: center;
@@ -266,7 +267,7 @@
 		min-width:1200px;
 		width:100%;
 		background:url(../img/wemsg_bg.png) no-repeat center top;
-		margin:30px auto 0 auto;
+		margin: 0 auto;
 		position:relative;
 		z-index:99;
 	}
