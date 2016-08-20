@@ -112,3 +112,12 @@
 			})
 		});
 			*/
+
+		$(document).ready(function() {
+			$('.skill_navbox li').on('click', function(event) {
+				alert(111)
+				$(this).addClass('active').siblings().removeClass('active');
+				$('.skill_tit').eq($(this).index()).addClass('on').siblings().removeClass('on');
+				/* Act on the event */
+			});
+		});

@@ -53,6 +53,7 @@
 .skill_tit{
 	width: 1000px;
 	margin:0 auto;
+	display:none;
 }
 .skill_tit h3{
     width: 1000px;  
@@ -64,6 +65,11 @@
     margin-top: 15px;
     padding: 15px 0;
 }
+.skill_tit h4{
+	color:#004ea1;
+	font-size: 26px;
+	line-height:56px;
+}
 .skill_tit img{
 	width:700px;
 	margin:0 auto;
@@ -74,7 +80,7 @@
 	margin-top:20px;
 	line-height:50px;
 	font-size:16px;
-	color:#666;
+	color:#333;
 	text-indent:2em;
 }
 @-webkit-keyframes white_animation{ 
@@ -85,4 +91,13 @@
 		-webkit-transform:scale(1, 1);
 	}
 }
+.skill_navbox li{
+	cursor: pointer;
+}
+.skill_navbox li.active{
+	color:#ed1c24;
+}
 
+.skill_tit.on{
+	display:block;
+}
