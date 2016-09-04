@@ -5,6 +5,7 @@
 	background: url(../img/skill.jpg) no-repeat;
 	background-size:100% 100%;
 	animation: white_animation 0.8s linear forwards;
+	-ms-animation: white_animation 0.8s linear forwards;
 	-webkit-animation: white_animation 0.8s linear forwards;
 	-moz-animation: white_animation 0.8s linear forwards;
 	border-bottom:3px solid #ed1c24;
