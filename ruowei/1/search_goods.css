@@ -1,0 +1,147 @@
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html{
+	font-size:100px;
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: #fef3ee;
+}
+.wrapper_box{
+	height: 100%;
+	overflow: hidden;
+}
+.logo_and_search{
+	width: 100%;
+	height: 50%;
+	background: url(mall/logo_bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.logo_box{
+	padding-top:1.58rem;
+}
+.logo_box h1{
+	width: 4.1rem;
+	height: 1.45rem;
+	background: url(mall/taobao_logo.png) no-repeat;
+	background-size:100% 100%;
+	margin:0 auto;
+}
+.logo_box .taobao_logo{
+	display: block;
+	height: 100%;
+}
+
+.search_box{
+	width: 6.9rem;
+	height: 0.96rem;
+	margin: 0.88rem auto 0;
+	border: 4px solid #ff7333;
+	border-right:none;
+	border-radius:0.1rem;
+	background-color: #fff;
+	position: relative;
+	z-index: 99;
+	position: relative;
+	overflow: hidden;
+}
+
+.search_box i{
+	width: 0.32rem;
+	height: 0.32rem;
+	background: url(mall/taobao_search_icon.png) no-repeat;
+	background-size:100% 100%;
+	display:block;
+	float: left;
+	margin-top:0.24rem;
+	margin-left: 0.26rem;
+}
+.search_box input{
+	width: 4.8rem;
+	font-size: 0.32rem;
+	margin-left: 0.2rem;
+	line-height: 0.84rem;
+	height: 0.84rem;
+	outline: none;
+	border: none;
+	-webkit-user-modify:read-write-plaintext-only;
+	float: left;
+}
+.search_box a{
+	display: block;
+	width: 1.2rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.32rem;
+	background-color: #ff7333;
+	position: absolute;
+	top:-0.02rem;
+	right: 0;
+}
+.search_instr{
+	width:100%;
+	height:50%;
+}
+
+.search_instr h5{ 
+	width: 100%;
+	margin-top:1.3rem;
+	font-size:0.4rem;
+	text-align:center;
+	color: #b08d79;
+}
+.search_instr_info{
+	margin-top:0.2rem;
+	margin-left: 1.5rem;
+}
+.search_instr_info p{
+	width: 100%;
+	text-align: left;
+	line-height: 0.7rem;
+	color: #b08d79;
+	font-size: 0.32rem;
+	position: relative;
+}
+.search_instr_info p i{
+	width: 0.36rem;
+	height: 0.36rem;
+	display: block;
+	float: left;
+	position: absolute;
+	left: 0;
+	top:0.16rem;
+}
+.search_instr_info p span{
+	display: block;
+	padding-left:0.7rem;
+	float: left;
+}
+.search_instr_info .search_instr_icon1{
+	background: url(mall/search_instr_icon1.png) no-repeat;
+	background-size:100% 100%;
+}
+.search_instr_info .search_instr_icon2{
+	background: url(mall/search_instr_icon2.png) no-repeat;
+	background-size:100% 100%;
+}
+.search_instr_info .search_instr_icon3{
+	background: url(mall/search_instr_icon3.png) no-repeat;
+	background-size:100% 100%;
+}
+
+
