@@ -20,11 +20,11 @@
         </div>
         <div class="search_box">
             <i></i>
-            <input id="keywords" type="text" name="" value="" placeholder="搜淘宝/天猫宝贝 得口粮">
+            <input id="keywords" type="text" name="" value="" id = "oInp" placeholder="搜淘宝/天猫宝贝 得口粮">
             <a href="javascript:search();">搜索</a>
         </div>
     </div>
-    <div class="search_instr">
+    <div class="search_instr" id="search_instr">
         <h5>如何获得口粮</h5>
         <div class="search_instr_info">
             <p class="clearfix">
@@ -49,6 +49,18 @@
         var keywords = document.getElementById('keywords').value;
         url = url.replace("{keywords}", encodeURIComponent(encodeURIComponent(keywords)));
         location.href = url;
+    }
+</script>
+<script type="text/javascript">
+    window.onload=function(){
+        var oInp = document.getElementById('oInp');
+        var oSearch = document.getElementById('search_instr');
+        oInp.onfocus=function(){
+            oSearch.style.display = none;
+        }
+        oInp.onblur = function() {
+            oSearch.style.display = block;
+        }
     }
 </script>
 </html>
