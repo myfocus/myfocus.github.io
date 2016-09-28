@@ -1,0 +1,394 @@
+html{
+	font-size:100px;
+	height: 100%;
+}
+body {
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #f1f1f1;
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: #f1f1f1;
+}
+.wrapper_box{
+	padding-bottom: 3rem;
+	overflow-y:scroll;
+}
+
+/*新手攻略*/
+
+/*@
+	轮播图
+*/
+.help_banner{
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 0.2rem;
+	position: relative;
+	
+}
+.swiper-container .swiper-slide{
+	width: 100%;
+}
+.swiper-container .swiper-slide img{
+	width:5.83rem;
+	height: 5.94rem;
+	display: block;
+	font-size: 0.24rem;
+	margin:0 auto;
+}
+.swiper-pagination {
+	left: 50%;
+    margin-left: -0.72rem;
+}
+.swiper-pagination-bullet{
+	width:0.16rem;
+	height: 0.16rem;
+	background-color: #cacaca;
+	margin-right:0.2rem;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active{
+	background-color: #3ec179;
+}
+
+/*@
+	常见问题
+*/
+.Common_problem{
+	width: 100%;
+	margin-top:0.9rem;
+}
+.Common_problem_bottom{
+	padding-bottom: 1rem;
+}
+.Common_problem h2{
+	font-size: 0.32rem;
+	margin-left: 0.32rem;
+}
+
+.problems_box{
+	padding-top:0.24rem;
+	font-size: 0.28rem;
+}
+.pro_title{
+	width: 100%;
+	background-color: #ffffff;
+}
+.problems h5{
+	margin-left: 0.31rem;
+	width: 7.19rem;
+	border-bottom: 1px solid rgba(202,202,202,0.78);
+	padding: 0.25rem 0;
+	line-height: 0.4rem;
+	color:rgba(42,42,42,0.78);	
+	position: relative;
+	font-size: 0.28rem;
+}
+.problems h5.bg_none{
+	border-bottom: none;
+}
+.problems h5 i{
+	width: 0.31rem;
+	height: 0.17rem;
+	position: absolute;
+	right: 0.3rem;
+	top:0.31rem;
+	background:url(../../images/game/help_close_gray.png) no-repeat;
+	background-size: 100% 100%;
+}
+.problems h5 i.open{
+	background:url(../../images/game/help_open_gray.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.problems p{
+	width: 6.94rem;
+	margin: 0.14rem  auto 0.32rem auto;
+	color: #6a6a6a;
+	line-height: 0.4rem;
+	display: none;
+}
+.problems p.on{
+	display:block;
+}
+
+
+/*礼包详情*/
+
+.header_game{
+	width: 100%;
+	height: 1.52rem;
+	position: relative;
+	background-color:#ffffff;
+}
+.head_logo{
+	width: 1.04rem;
+	height: 1.1rem;
+	border-radius: 0.12rem;
+	overflow: hidden;
+	position: absolute;
+	left: 0.38rem;
+	top:0.2rem;
+}
+.head_logo img{
+	width: 100%;
+	display: block;
+}
+.gameName{
+	position: absolute;
+	top:0.34rem;
+	left:1.7rem;
+	font-size: 0.32rem;
+	color: #4c4c4c;
+}
+.package_time{
+	position: absolute;
+	left: 1.7rem;
+	top:1rem;
+	font-size: 0.24rem;
+	color: #999999;
+}
+.package_num_surplus{
+	position: absolute;
+	top:0.68rem;
+	left: 6.56rem;
+	font-size: 0.22em;
+	color: #999999;
+}
+.package_num_red{
+	position: absolute;
+	left: 6.56rem;
+	top:1rem;
+	color: #fb624b;
+	font-size: 0.28em;
+	font-weight: 800;
+}
+
+.section_package{
+	width: 100%;
+	background-color: #ffffff;
+	margin-top:0.2rem;
+}
+.package_connect{
+	width: 6.6rem;
+	padding-top: 0.4rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #dcdcdc;
+}
+.package_connect_bordernone{
+	border-bottom: none;
+}
+.section_package h3{                                        
+	height: 0.3rem;
+	border-left:4px solid #36c277;
+	padding-left: 0.2rem;
+	color: #2a2a2a;
+	font-size: 0.28rem;
+	
+}
+.package_connect_box{
+	font-size: 0.28rem;
+	color: #2a2a2a;
+	margin-left: 0.26rem;
+	margin-top:0.18rem;
+	padding-bottom: 0.5rem;
+}
+
+.package_connect_box p{
+	line-height: 0.4rem;
+}
+
+.game_button{
+	width: 6.72rem;
+	height: 0.8rem;
+	margin: 0.52rem auto 0;
+	overflow: hidden;
+}
+.game_button a{
+	width: 3.1rem;
+	height: 0.78rem;
+	border-radius: 0.39rem;
+	background-color:#3ec179;
+	float:left;
+	color:#ffffff;
+	line-height: 0.78rem;
+	text-align: center;
+	font-size: 0.32rem;
+
+}
+.game_button a:nth-child(1){
+	margin-right:0.5rem; 
+}
+/*
+	复制成功
+*/
+.copy_success{
+	width: 2.82rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	border-radius:0.4rem;
+	background-color: rgba(102,102,102,0.78);
+	color: #ffffff;
+	font-size: 0.32rem;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -1.41rem;
+	margin-top:0.8rem;
+}
+
+
+/*玩家须知*/
+.notice_tab{
+	width: 100%;
+	background-color: #ffffff;
+	position: relative;
+	padding-bottom: 0.14rem;
+	padding-top: 0.2rem;
+	
+}
+.notice_tab i{
+	width: 0.19rem;
+	height: 0.36rem;
+	position: absolute;
+	left: 0.3rem;
+	top:0.35rem;
+	background:url(../../images/game/game_return.png) no-repeat;
+	background-size: 100% 100%;
+}
+.tab_box{
+	width: 4rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border:2px solid #3ec179;
+	border-radius: 0.1rem;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+.tab_box div{
+	width: 1.98rem; 
+	height: 100%;
+	text-align: center;
+	color: #3ec179;
+	font-size:0.28rem;
+}
+.tab_box div.active{
+	background-color: #3ec179;
+	color: #ffffff;
+}
+
+.Common_problem2{
+	width: 100%;
+	padding-bottom: 1rem;
+}
+
+.problems_box2{
+	font-size: 0.28rem;
+}
+
+/*
+	游戏详情页
+*/
+
+/*轮播*/
+.game_con_banner{
+	width: 100%;
+	/*background: url(../../images/game/game_banner.jpg) no-repeat top center;*/
+    background-size: 500% auto;
+}
+.swiper-container1{
+	width: 100%;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+.swiper-container1 .swiper-slide{
+	width: 4.5rem;
+}
+.swiper-container1 .swiper-slide img{
+	width: 100%;
+	display: block;
+}
+
+.gameName_detail{
+	position: absolute;
+	top:0.24rem;
+	left:1.7rem;
+	font-size: 0.32rem;
+	color: #4c4c4c;
+}
+.game_tit_con{
+	font-size: 0.24rem;
+	color: #999999;
+	position: absolute;
+	left: 1.7rem;
+	top:0.64rem;
+	
+}
+.game_item{
+	font-size: 0.22rem;
+	color: #f86351;
+	position: absolute;
+	left: 1.7rem;
+	top:1rem;
+
+}
+
+.game_item span{
+	width: 1.18rem;
+	height: 0.3rem;
+	background-color: #fff1ee;
+	border-radius: 0.2rem;
+	display: block;
+	float: left;
+	margin-right:0.12rem;
+	line-height: 0.3rem;
+	text-align: center;
+}
+.game_peo_number{
+	position: absolute;
+	left: 5.92rem;
+	top:0.35rem;
+	font-size: 0.24rem;
+	color:#a5a5a5;
+}
+.game_com_info{
+	width: 6.86rem;
+	margin:0 auto;
+	font-size: 0.28rem;
+	color:#999999;
+	line-height: 0.48rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.3rem;
+}
+
+.game_btn_open{
+	width: 6.12rem;
+	height: 0.78rem;
+	line-height: 0.78rem;
+	text-align: center;
+	margin: 0.3rem auto;
+	background-color: #4dc283;
+	border-radius: 0.4rem;
+	font-size: 0.32rem;
+	display: block;
+	color: #fff;
+}
+
+.add_padding{
+	width: 100%;
+	padding-bottom: 3rem;
+}
+
+
+
+
+

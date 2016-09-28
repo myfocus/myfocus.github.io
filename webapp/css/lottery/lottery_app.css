@@ -1,0 +1,230 @@
+
+.rotate{
+    width: 28%;
+    position: absolute;
+    top: 28%;
+    left: 36%;
+    z-index: 9;
+}
+.tb{
+    position: relative;
+}
+.lottery{
+
+}
+.turnplate{
+    width: 91%;
+    display: block;
+    margin: 2rem auto 20px;
+    background: url(../../images/yuanpan.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2;
+
+}
+.deng.tf{
+    background:url(../../images/zhuan1.png) 0 0 no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    -webkit-animation:dian 800ms infinite;
+    -webkit-backface-visibility:hidden
+}
+@-webkit-keyframes dian{
+    50%{background-image:url(../../images/zhuan2.png);
+        background-size:100% 100%;-webkit-background-size:100% 100%
+    }
+    100%{background-image:url(../../images/zhuan1.png);background-size:100% 100%;
+        -webkit-background-size:100% 100%
+    }
+}
+.deng{
+    display: block;
+    padding: 7.5%;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(../../images/zhuan1.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.turntableimg{
+    width: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.lottery_zhuan{
+    position: relative;
+    width: 100%;
+}
+
+
+.lottery {
+    width: 100%;
+    min-height: 100%;
+    background: url(../../images/lottery/app_lottery_bg.jpg) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden
+}
+.w_lottery_footer {
+    color: #8d760e;
+    font-size: .93rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 1.3rem;
+    width: 100%;
+    left: 0
+}
+.w_lottery_footer a {
+    color: #33b5ed;
+    text-decoration: underline;
+}
+html {
+    font-size: 16px
+}
+.img_top {
+    padding-top: 0.5rem
+}
+.luck_img_1 {
+    width: 92.27%;
+    margin: 0 auto
+}
+
+.pointer {
+    position: absolute;
+    width: 30.8%;
+    height: 38.5%;
+    left: 34.7%;
+    top: 27%
+}
+
+.close {
+    width: 2.72rem;
+    height: 2.72rem;
+    text-align: center;
+    line-height: 2.72rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, .8);
+    display: block;
+    margin: 1.9rem auto 0
+}
+.close:before {
+    content: "\2715";
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: .6;
+    font-weight: 700
+}
+
+
+.rora_bg{
+    width: 21%;
+    margin: -2rem auto 0;
+}
+
+/*****弹层中奖******/
+.popup {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+.pop_content {
+    width: 77.33%;
+    background: #fff2c5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 6.43rem auto 0;
+    height: auto;
+    overflow: hidden;
+}
+.luck_icon {
+    width: 66.7%;
+    margin: 0 auto;
+}
+.luck_tip {
+    width: 87.2%;
+    margin: 2rem auto 0;
+    font-size: 1.125rem;
+    color: #323232;
+    line-height: 1.5;
+    text-align: center;
+}
+.text-tip {
+    width: 87.24%;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    margin: 1rem auto 0;
+    line-height: 1.5;
+}
+.share_button {
+    width: 76%;
+    height: 2.5rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+    background: #fe9812;
+    line-height: 2.5rem;
+    text-align: center;
+    display: block;
+    border: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 1.2rem auto 1.625rem;
+}
+.extract_rule {
+    color: #8d760e;
+    font-size: .875rem;
+    width: 82%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    margin-top: .875rem
+}
+.er_title {
+    width: 100%;
+    height: 1rem;
+    background: url(../../images/rulebg.png) 0 center no-repeat;
+    -webkit-background-size: 100% 46%;
+    background-size: 100% 46%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: .5rem
+}
+.rule_text {
+    padding-top: .5rem;
+    line-height: 1.5
+}
+.text-tip {
+    width: 77.24%;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    margin: 1rem auto 0;
+    line-height: 1.5
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 13px
+    }
+}
+@media screen and (min-width: 321px)and (max-width: 375px) {
+    html {
+        font-size: 14px
+    }
+}

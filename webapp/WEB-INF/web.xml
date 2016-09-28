@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+  <display-name>${maven.project.name}</display-name>
+  <!-- Disables Servlet Container welcome file handling -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <!--<welcome-file>user/login</welcome-file>-->
+  </welcome-file-list>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+  </listener>
+  <!-- HttpRequestContext Builder -->
+  <filter>
+    <filter-name>requestContextBuildFilter</filter-name>
+    <filter-class>com.ruowei.core.filters.HttpRequestContextBuildFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>requestContextBuildFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- Spring applicationContext Path -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath*:/spring/spring-*.xml
+    </param-value>
+  </context-param>
+  <!-- Spring applicationContext Path & MVC -->
+  <servlet>
+    <servlet-name>springmvc</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath*:servlet-context.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springmvc</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.js</url-pattern>
+    <url-pattern>*.css</url-pattern>
+    <url-pattern>*.txt</url-pattern>
+    <url-pattern>*.png</url-pattern>
+    <url-pattern>*.jpg</url-pattern>
+    <url-pattern>*.gif</url-pattern>
+    <url-pattern>*.ico</url-pattern>
+    <url-pattern>*.eot</url-pattern>
+    <url-pattern>*.svg</url-pattern>
+    <url-pattern>*.ttf</url-pattern>
+    <url-pattern>*.woff</url-pattern>
+    <url-pattern>*.html</url-pattern>
+    <url-pattern>*.mp3</url-pattern>
+  </servlet-mapping>
+  <!-- Character Encoding filter -->
+  <filter>
+    <filter-name>characterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+      <param-name>forceEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>characterEncodingFilter</filter-name>
+    <servlet-name>springmvc</servlet-name>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>characterEncodingFilter</filter-name>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+
+
+  <session-config>
+    <cookie-config>
+      <!-- session cookie http only -->
+      <http-only>true</http-only>
+    </cookie-config>
+    <!-- session跟踪 cookie、url、ssl -->
+    <tracking-mode>COOKIE</tracking-mode>
+  </session-config>
+
+  <error-page>
+      <error-code>404</error-code>
+      <location>/html/app_text/error.html</location>
+  </error-page>
+
+  <error-page>
+      <error-code>500</error-code>
+      <location>/html/app_text/error.html</location>
+  </error-page>
+</web-app>

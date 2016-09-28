@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/bailu/lottery_bailu.css"/>
+    <title>白鹿周年店庆幸运大放送</title>
+</head>
+<body>
+<!--填写手机号--->
+<div class="register">
+    <section class="img_top">
+
+        <img class="reg_slogan" src="../../images/bailu/rote_slogan.png"/>
+
+    </section>
+    <section class="weChart_red">
+        <div class="weChart_redbg">
+            <div class="toget">
+                <div class="weChart_red_form">
+                    <p class="reg_rule">填写手机号参加幸运大放送活动，手机流量、代金券、特色菜任性领~</p>
+                    <input class="luck_text un1" type="tel" placeholder="请输入手机号" maxlength="11" value="" name="phonenum"/>
+                    <input id="submit" class="luck_submit" type="button" value="去抽奖"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <p class="chart_footer">流量活动方案提供商 <a href="https://mp.weixin.qq.com/s?__biz=MzI2NTM1MzY4OQ==&mid=100000063&idx=1&sn=c292f1d8aca5fa477f69c36bab13d773&scene=1&srcid=0702N8r7aIWJLaxsm6zVda2O&pass_ticket=ikEOHCD%2FXg8g1%2BSr8ajgGZGwIDlZOGV%2BhP3FPfTRXvA8ih4RZUo187mk8t3CJ6ql#rd"> 口粮</a>（若为）</p>
+</div>
+<!--抽奖-->
+<div class="lottery" style="display: none;">
+
+        <section class="img_top">
+            <img class="lottery_slogan" src="../../images/bailu/rote_slogan.png"/>
+
+        </section>
+        <section class="lottery_zhuan">
+            <div class="turnplate">
+                <div class="deng">
+                    <img id="turntableimg" class="turntableimg" src="../../images/bailu/lottery_rota.png"/>
+                </div>
+            </div>
+            <img id="rotate" class="rotate" src="../../images/turnplate-pointer.png"/>
+            <img class="rora_bg" src="../../images/lottery/rora_bg.png"/>
+        </section>
+
+    <div class="extract_rule" >
+        <h3 class="er_title">抽奖规则</h3>
+        <p>
+            【活动时间】<br/>
+            <span class="left10">2016年9月1日—2016年9月10日。</span><br/>
+            【参与方式】<br/>
+           <span class="left10"> 1、参与方式</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 关注白鹿江西餐厅官方微信（bailujiangxi），在微信编辑框内回复关键字“白鹿有礼”可获得活动链接，点击链接即可进入活动页面。<br/>
+            <span class="left10">2、 活动奖品设置：</span><br/>
+            <span class="left10">30M流量包</span><br/>
+            <span class="left10">100M流量包</span><br/>
+           <span class="left10"> 500M流量包</span><br/>
+            <span class="left10">1G流量包</span><br/>
+            <span class="left10">50元代金券</span><br/>
+            <span class="left10">30元代金劵</span><br/>
+            <span class="left10">特色菜品</span><br/>
+            <span class="left10">（注每个手机号限抽奖一次）</span><br/>
+           <span class="left10"> 3、奖品发放</span><br/>
+            <span class="left10">1、奖品将于活动期间抽奖当日内发放到幸运用户手机上（注：被充值手机号码为用户参与活动时填写的手机号码，如未填写手机号码、手机号码错误、手机号码无法充值者视为弃权）。</span><br/>
+            <span class="left10">2、特色菜品及代金券点击即可存入您的微信我的卡券（限时有效）。</span><br/>
+            【联系我们】
+             <span class="left10">充值过程中如有任何问题，请致电400-879-6969。</span><br/>
+
+            <br/>
+        </p>
+    </div>
+    <footer class="chart_footer">
+        本活动由 <a href="https://mp.weixin.qq.com/s?__biz=MzI2NTM1MzY4OQ==&mid=100000063&idx=1&sn=c292f1d8aca5fa477f69c36bab13d773&scene=1&srcid=0702N8r7aIWJLaxsm6zVda2O&pass_ticket=ikEOHCD%2FXg8g1%2BSr8ajgGZGwIDlZOGV%2BhP3FPfTRXvA8ih4RZUo187mk8t3CJ6ql#rd">口粮</a>（若为）提供技术支持
+    </footer>
+
+</div>
+
+<!--未关注提示-->
+    <div class="nofocus" style="display: none;">
+        <div class="nofocuscon">
+            <img class="nofocus_slogan" src="../../images/bailu/nofocus_slogan.png"/>
+           <p class="focustext">
+               1.请先关注“白鹿江西餐厅”微信公众号<br/>
+               2.在公众号中回复关键字“白鹿好礼”即可获得活动链接<br/>
+               3.点击链接进入抽奖页面<br/>
+           </p>
+            <img class="code" src="../../images/bailu/code.png">
+            <p class="focustip">
+                请在微信中长按并关注后
+                回复“白鹿有礼”参与此活动
+
+            </p>
+        </div>
+    </div>
+<!--中奖弹出层--->
+<section class="popup" style="display: none;">
+    <div class="pop_content">
+        <img id="luck_icon" class="luck_icon" src="../../images/bailu/congratulate.png"/>
+        <div class="luck_tip">
+            <p id="prize" class="prize">
+                获得特色菜
+
+            </p>
+            <p class="card_tip" style="display: none;">
+                正在为您充值<br/>
+                充值成功会以短信的形式<br/>
+                发送到您的手机
+            </p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/awardRotate.js"></script>
+<script src="../../js/bailu/lottery_bailu.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: '${wxappid}', // 必填，公众号的唯一标识
+        timestamp: '${timestamp}', // 必填，生成签名的时间戳
+        nonceStr: '${noncestr}', // 必填，生成签名的随机串
+        signature: '${wxsignature}',// 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+    wx.ready(function(){
+        var option =  {
+            title: '白鹿周年店庆幸运大放送', // 分享标题
+            desc: '欢乐开学季，幸运转转转，周年店庆，白鹿送您洪荒之“礼”。', // 分享描述
+            link:"",
+            imgUrl: "http://img.ruwe.cn/api/show/image?fileKey=group1/M00/01/C8/Ci_U9VfGQfCAHP-dAAFV3wjEqlY568.jpg" // 分享图标
+        };
+        wx.onMenuShareTimeline(option);
+        wx.onMenuShareAppMessage(option);
+        wx.onMenuShareQQ(option);
+        wx.onMenuShareQZone(option);
+    });
+
+    try{
+        var AUTH = getCookieValue("AUTH")||"";
+        if(AUTH.length==0) {
+            $(".nofocus").show();
+        }
+        else {
+            var user = JSON.parse(AUTH.substr(1, AUTH.length - 2));
+            if (user.type != 102) {
+                $(".nofocus").show();
+            }
+        }
+    }catch(e){
+//        $(".nofocus").show();
+    }
+</script>
+
+</body>
+
+</html>

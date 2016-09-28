@@ -1,0 +1,184 @@
+.lottery {
+    width: 100%;
+    min-height: 100%;
+    background: url(../images/app_lottery_bg.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    overflow-x: hidden
+}
+.luck_img_1 {
+    width: 85%;
+    margin: 0 auto
+}
+.app_img_top {
+    padding-top: 1.2rem
+}
+.banner {
+    width: 91%;
+    display: block;
+    margin: 0 auto;
+    background: url(../images/yuanpan.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2
+}
+.turnplate {
+    display: block;
+    padding: 3%;
+    position: relative;
+    margin: 0 auto;
+    background: url(../images/zhuan1.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%
+}
+.turnplate.tf {
+    background: url(../images/zhuan1.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-animation: dian 800ms infinite;
+    -webkit-backface-visibility: hidden
+}
+@-webkit-keyframes dian {
+    50% {
+        background-image: url(../images/zhuan2.png);
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%
+    }
+    100% {
+        background-image: url(../images/zhuan1.png);
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%
+    }
+}
+.lottery_rote {
+    padding-top: 2rem
+}
+.lottery_shaw {
+    width: 20.13%;
+    margin: -.2rem auto
+}
+.item {
+    width: 100%
+}
+.pointer {
+    position: absolute;
+    width: 31.5%;
+    height: 38.5%;
+    left: 34.4%;
+    top: 27%
+}
+.popup {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none
+}
+.pop_content {
+    width: 77.33%;
+    background: #fff2c5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 6.43rem auto 0;
+    height: auto;
+    overflow: hidden
+}
+.close {
+    width: 2.72rem;
+    height: 2.72rem;
+    text-align: center;
+    line-height: 2.72rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, .8);
+    display: block;
+    margin: 1.9rem auto 0
+}
+.close:before {
+    content: "\2715";
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: .6;
+    font-weight: 700
+}
+.luck_icon {
+    width: 66.7%;
+    margin: 0 auto
+}
+.luck_tip {
+    width: 87.2%;
+    margin: 2rem auto 0;
+    font-size: 1.125rem;
+    color: #323232;
+    line-height: 1.5;
+    text-align: center
+}
+.luck_tip span {
+    color: #ff5b02
+}
+.share_button {
+    width: 76%;
+    height: 2.5rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+    background: #fe9812;
+    line-height: 2.5rem;
+    text-align: center;
+    display: block;
+    border: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 1.2rem auto 1.625rem
+}
+.extract_rule {
+    color: #8d760e;
+    font-size: .875rem;
+    width: 82%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    margin-top: .875rem
+}
+.er_title {
+    width: 100%;
+    height: 1rem;
+    background: url(../images/rulebg.png) 0 center no-repeat;
+    -webkit-background-size: 100% 46%;
+    background-size: 100% 46%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: .5rem
+}
+.rule_text {
+    padding-top: .5rem;
+    line-height: 1.5
+}
+.text-tip {
+    width: 77.24%;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    margin: 1rem auto 0;
+    line-height: 1.5
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 13px
+    }
+}
+@media screen and (min-width: 321px)and (max-width: 375px) {
+    html {
+        font-size: 14px
+    }
+}

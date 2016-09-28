@@ -1,0 +1,244 @@
+/***sign*/
+.sign{
+
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+    background:url("../images/sign_bg.png") 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.laba{
+    width: 100%;
+    height: 4.22rem;
+    line-height: 4.22rem;
+
+
+    text-align: center;
+}
+
+.laba span{
+    font-size: 0.9375rem;
+    color: #ffffff;
+    display:inline-block;
+    background:url("../images/laba.png") 0 center no-repeat;
+    -webkit-background-size: 1.25rem 1.06rem;
+    background-size: 1.25rem 1.06rem;
+    padding-left: 1.656rem;
+
+}
+.gprs_number{
+    font-size: 0.93rem;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    margin-top: 1rem;
+}
+.gprs_number strong{
+    font-size: 2.8125rem;
+}
+.click_sign{
+    width: 13.47rem;
+    height: 12.88rem;
+    -webkit-border-radius: 8rem;
+    -moz-border-radius: 8rem;
+    border-radius: 8rem;
+    background:rgba(255,214,214,.5);
+    margin: 2rem auto 0;
+    padding-top: 0.69rem;
+}
+.sign_bg{
+    width: 12.09rem;
+    height: 12.09rem;
+    -webkit-border-radius: 6.5rem;
+    -moz-border-radius: 6.5rem;
+    border-radius: 6.5rem;
+    background: #ffffff;
+    margin:0 auto;
+}
+.sign_text{
+    padding-top:2.19rem;
+    height: 4.41rem;
+    line-height: 4.41rem;
+    width: 6.6875rem;
+    text-align: center;
+    color: #ff5f5d;
+    border-bottom: 1px solid #ff5f5d;
+    font-size: 2.125rem;
+    margin: 0 auto;
+
+}
+
+.get_number{
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    color: #ff5f5d;
+
+}
+
+.gotoexchange{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 7.47rem;
+    line-height: 7.47rem;
+
+}
+.gotoexchange a{
+    color: #ffffff;
+    font-size: 1.0625rem;
+}
+.sign_ok_bg{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 8;
+}
+.sign_ok_con{
+    width: 69.6%;
+    background:#fffff4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-top: 1.9375rem;
+    margin: 20% auto 0;
+
+}
+
+.sign_sucss_img{
+    width: 65.38%;
+    margin:0  auto;
+
+}
+.sign_ok_get{
+    line-height: 2;
+    height: 7.125rem;
+    text-align: center;
+    color: #ff6714;
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+
+}
+
+.close_sign_ok{
+    width: 3.47rem;
+    height: 3.47rem;
+    line-height: 3.47rem;
+    text-align: center;
+    color: #fffff4;
+    font-size: 2rem;
+    background:rgba(0,0,0,.4);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    margin: 1.78rem auto 0;
+
+
+}
+.close_sign_ok:before{
+    content:"\2715";
+}
+.sign_error{
+    width: 13rem;
+    height: 6rem;
+    padding-top:1.5rem;
+    background:rgba(0,0,0,.7);
+    position: fixed;
+    left: 50%;
+    margin-left: -6.5rem;
+    top: 50%;
+    margin-top: -3rem;
+    z-index: 9;
+    animation: fadeIn 1s both;
+
+}
+@keyframes fadeIn {
+
+    0% {
+
+        opacity: 0;
+        transform:scale3d(1,1,1);
+    }
+    50% {
+
+        opacity: 1;
+        transform:scale3d(1.2,1.2,1.2);
+    }
+    100% {
+
+        opacity: 1;
+        transform:scale3d(1,1,1);
+    }
+}
+.error_Symbol{
+    width: 2.06rem;
+    height: 2.06rem;
+
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    border-radius: 1.2rem;
+    line-height: 2.06rem;
+    text-align: center;
+    color: #404040;
+    font-size: 1.5rem;
+    background:#ffffff;
+    margin:0 auto;
+
+}
+
+.error_text{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 1rem;
+
+}
+
+/**兑换**/
+.now_number{
+    height: 6.9375rem;
+    line-height: 6.9375rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+
+}
+
+.conmon_width{
+    width: 86.67%;
+    height: 3.2185rem;
+    line-height: 3.2185rem;
+    display: block;
+    border: 0;
+    margin:0 auto 1.5625rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+.phonenumber{
+    color: #ff823c;
+    text-indent: 1rem;
+}
+.phonenumber::-webkit-input-placeholder
+{
+    color: #ff823c;
+}
+.changebtn{
+    background:#ffb049;
+    font-size: 1.0625rem;
+    color: #ffffff;
+}

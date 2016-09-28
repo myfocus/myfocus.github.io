@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>游戏详情</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/game/reset.css">
+    <link rel="stylesheet" href="/css/game/swiper.min.css">
+    <link rel="stylesheet" href="/css/game/game_help.css">
+</head>
+<body>
+<div class="wrapper" style="overflow:hidden;">
+    <div class="wrapper_box">
+         <header class="game_con_banner">
+            <div class="swiper-container1">
+                <ul class="swiper-wrapper">
+                </ul>
+            </div>
+        </header>
+
+        <!-- /header -->
+
+        <div class="header_game">
+            <div class="head_logo">
+                <img id="imgGameIcon" src="" alt="">
+            </div>
+            <h5 class="gameName_detail" id="gameName"></h5>
+            <p class="game_tit_con" id="gameDesc"></p>
+            <div class="game_item clearfix" id="gameTag">
+            </div>
+            <p class="game_peo_number"><i id="virtualJoinPerson"></i>人参加</p>
+        </div>
+        <!--/游戏名称-->
+
+        <section class="section_package">
+            <div class="package_connect">
+                <h3>应用信息</h3>
+                <div class="package_connect_box">
+                    <p>版本： <i id="gameVersion"></i></p>
+                    <p>大小： <i id="gameSize"></i></p>
+                    <p>语言： <i id="gameLanguage"></i></p>
+                    <p>开发者：<i id="gameDeveloper"></i></p>
+                </div>
+            </div>
+            <div class="package_connect package_connect_bordernone">
+                <h3>游戏介绍</h3>
+                <div class="package_connect_box">
+                    <p id="content"></p>
+                </div>
+            </div>
+        </section>
+        <!-- /游戏详情 -->
+
+        <section class="section_package ">
+            <div class="game_com_info">
+                <p>· 活动参与过程中有任何疑问，可联系客服电话：400-879-6969（服务时间9:00-23:00）</p>
+                <p>· 此活动与苹果公司无关。</p>
+            </div>
+        </section>
+        <div class="add_padding"></div>
+    </div>
+   
+</div>
+<script src="/js/game_font_size.js" type="text/javascript"></script>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/swiper.min.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        getGameInfoById();
+    });
+    /**
+     *  功能描述：根据游戏id获取游戏信息
+     *  请求方式：GET
+     *  请求地址：/game/get_by_id
+     *  函数名称：getGameInfoById
+     */
+    function getGameInfoById() {
+        var gameId = getUrlParam("id");
+        if (!gameId) {
+            return;
+        }
+        $.ajax({
+            url: '/game/get_by_id',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+                gameId: gameId
+            },
+            success: function (data) {
+                if (data.status == 0) {
+                    var item = data.data.gameinfo;
+                    console.log(item);
+
+                    $('#gameName').html(item.gameName);
+                    $('#gameDesc').html(item.gameDesc);
+
+                    var gameTagHtml = '';
+                    var gameTag = item.gameTag.split(',');
+                    $.each(gameTag, function (index, tag) {
+                        if (tag != '' && tag.length > 0) {
+                            gameTagHtml += '<span>' + tag + '</span>'
+                        }
+                    });
+                    $('#gameTag').html(gameTagHtml);
+
+                    var appInfo = JSON.parse(item.appInfo);
+                    $('#gameVersion').html(appInfo.gameVersion);
+                    $('#gameSize').html(appInfo.gameSize);
+                    $('#gameLanguage').html(appInfo.gameLanguage);
+                    $('#gameDeveloper').html(appInfo.gameDeveloper);
+
+                    $('#content').html(item.content);
+                    if (item.gameIcon.indexOf('://') > 0) {
+                        $('#imgGameIcon').attr('src', item.gameIcon);
+                    } else {
+                        $('#imgGameIcon').attr('src', IMG_URL + item.gameIcon);
+                    }
+                    $('#virtualJoinPerson').html(item.virtualJoinPerson);
+
+                    var pics = item.pics.split(',');
+                    $.each(pics, function (index, pic) {
+                        if (pic != '' && pic.length > 0) {
+                            $('.swiper-wrapper').append('<li class="swiper-slide"><img src="' + IMG_URL + pic + '"></li>');
+                        }
+                    });
+
+                    if (item.pics != '' && item.pics.trim().length > 0) {
+                        $('.game_con_banner').css('background-image', 'url(' + IMG_URL + pics[0] + ')');
+                    }
+
+                    /**
+                     *轮播图
+                     */
+                    var mySwiper = new Swiper('.swiper-container1', {
+                        loopAdditionalSlides: 2,
+                        direction: 'horizontal',
+                        loop: true,//环
+                        autoplay: 3000,//自动滑动
+                        slidesPerView: 2,
+                        centeredSlides: true,
+                        spaceBetween: 10,
+                        observer: true,//修改swiper自己或子元素时，自动初始化swiper
+                        observeParents: true//修改swiper的父元素时，自动初始化swiper
+                    });
+
+
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+            }
+        });
+    }
+</script>
+</body>
+</html>

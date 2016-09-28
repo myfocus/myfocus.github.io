@@ -1,0 +1,150 @@
+.extract{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+.nownum{
+    width: 100%;
+    height: 10rem;
+    background:url("../../images/dbank/mybank_bg.png") 0 0 no-repeat #ff800d;
+    -webkit-background-size: 100% 10rem;
+    background-size: 100% 10rem;
+    position: relative;
+}
+.question_icon{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 9;
+    width: 1.25rem;
+    display: block;
+
+}
+.question_icon img{
+    width: 100%;
+}
+.nowtext{
+    padding-top: 1.8rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.moneynum{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+    padding-top: 1rem;
+
+}
+.phonenum{
+    width: 100%;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    display: block;
+    border: 0;
+    background: #ffffff;
+    font-size: 1.125rem;
+    padding-left: 5%;
+    margin-top: 1rem;
+}
+.gprsnum{
+    display: block;
+    height: 3.94rem;
+    line-height: 3.94rem;
+    width: 40%;
+    text-align: left;
+    color: #4c4c4c;
+    font-size: 1rem;
+
+}
+
+.change{
+    width: 60%;
+
+}
+.ratio{
+    font-size: 0.875rem;
+    color: #999999;
+    height: 3.875rem;
+    line-height: 3.875rem;
+    margin-right: 1rem;
+
+}
+
+.ratiomoney{
+    display: inline-block;
+    width: 4.94rem;
+    height: 2.19rem;
+    line-height: 2.19rem;
+    text-align: center;
+    color: #b3b3b3;
+    border:1px solid #b3b3b3;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #ffffff;
+    margin-top: 0.8rem;
+
+}
+.ratiomoney.active{
+    color: #44c27e;
+    border:1px solid #44c27e;
+}
+
+.changelist{
+    width: 90%;
+    background: #ffffff;
+    padding: 0 5%;
+    margin-top: 1rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.list{
+    height: 3.875rem;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    clear: both;
+}
+
+.moneynum span{
+    font-size: 1rem;
+}
+
+.changebg{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.changetip{
+    width: 69.73%;
+    position: absolute;
+    left: 50%;
+    margin-left: -34.865%;
+    top: 20%;
+    padding: 3rem 0 2rem;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.changtopimg{
+    width: 67.5%;
+    margin: 0 auto;
+}
+.cok{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+

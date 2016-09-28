@@ -1,0 +1,185 @@
+
+.lottery{
+    width: 100%;
+    min-height: 100%;
+    background: #5c4095;
+    max-width: 640px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.luck_img_1{
+    width: 96%;
+    margin:0 auto;
+
+}
+.luck_img_4{
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    top: -2rem;
+}
+/* 大转盘样式 */
+.banner{
+    display:block;
+    margin:-8.5rem auto 20px;
+    background-size: 100% 100%;}
+.turnplate{
+    display:block;
+    width:88%;
+    padding:3%;
+    position:relative;
+    background:url("../images/turnplate-luck-bg.png") 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.item{
+    width:100%;
+}
+.pointer{
+    position: absolute;
+    width: 31.5%;
+    height: 38.5%;
+    left: 34.6%;
+    top: 27%;
+}
+.popup{
+    width:100%;
+    height: 100%;
+
+    position: absolute;
+    left:0 ;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+.popupbg{
+    background: rgba(0, 0, 0, .7);
+}
+.pop_content{
+    width: 77.33%;
+    background: #fff2c5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 6.43rem auto 0;
+    height: auto;
+    overflow: hidden;
+
+
+}
+.close{
+    width: 2.72rem;
+    height: 2.72rem;
+    text-align: center;
+    line-height: 2.72rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    background:rgba(0,0,0,.8);
+    display: block;
+    margin:1.9rem auto 0;
+
+}
+.close:before{
+    content:"\2715";
+    color: #ffffff;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    font-weight: bold;
+
+
+}
+.luck_icon{
+    width: 66.7%;
+    margin:0 auto;
+}
+.luck_tip{
+    width: 87.2%;
+    margin:2rem auto 0;
+    font-size: 1.125rem;
+    color: #323232;
+    line-height: 1.5;
+    text-align: center;
+
+}
+.luck_tip span{
+    color:#ff5b02;
+}
+.share_button{
+    width: 76%;
+    height: 2.5rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    border-radius: 3rem;
+    background:#fe9812;
+    line-height: 2.5rem;
+    text-align: center;
+    display: block;
+    border: 0;
+    color:#ffffff;
+    font-size: 1.2rem;
+    margin: 1.2rem auto 1.625rem;
+
+}
+
+.extract_rule{
+    color: #ffffff;
+    font-size: 0.875rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 3rem;
+
+}
+
+.text-tip{
+    width: 77.24%;
+    text-align: center;
+    font-size: 1rem;
+    color: #999999;
+    margin:1rem auto 0;
+    line-height: 1.5;
+}
+
+/****pc***/
+.pc{
+    width: 334px;
+    padding: 80px 8px 8px;
+    background:url("../images/redbao.png") 0 0 no-repeat;
+    margin: 0 auto;
+    height: 521px;
+    overflow: hidden;
+    position: fixed;
+    left: 50%;
+    margin-left: -167px;
+    bottom: 0;
+}
+body.bg{
+    width: 100%;
+    background:url("../images/Y_luckbody_bg.png") center bottom no-repeat #fea0a0;
+}
+
+
+
+
+@media screen and (max-width: 320px){
+    html{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 321px)and (max-width: 375px){
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 376px){
+    html{
+        font-size: 16px;
+    }
+}
+
+
+
+
