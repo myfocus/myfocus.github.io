@@ -74,11 +74,11 @@ body {
 	font-size: 0.28rem;
 	margin-left: 0.2rem;
 	height: 0.28em;
+	line-height：1.5em;
 	padding:0.28rem;
 	outline: none;
 	border: none;
 	float: left;
-	overflow: hidden;
 }
 .search_box a{
 	display: block;
