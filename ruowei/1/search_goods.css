@@ -102,6 +102,8 @@ body {
 	height:50%;
 	background-color: #fef3ee;
 	padding-top:1.3rem;
+	position: fixed;
+	bottom:0;
 }
 
 .search_instr h5{ 
