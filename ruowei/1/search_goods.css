@@ -75,14 +75,14 @@ body {
 	font: 0.28rem arial;
 	margin-left: 0.3rem;
 	padding:0.27rem 0;
-	line-height:0.42rem !important;
+	line-height:0.28rem !important;
 	outline: 0;
 	border: none;
 	float: left;
 	font-family: inherit;
     display: block;
-    -webkit-appearance: none;
-    appearance: none;
+    /*-webkit-appearance: none;
+    appearance: none;*/
 }
 .search_box a{
 	display: block;
