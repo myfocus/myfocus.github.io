@@ -80,8 +80,9 @@ body {
 	border: none;
 	float: left;
 	font-family: inherit;
-    vertical-align: baseline;
     display: block;
+    -webkit-appearance: none;
+    appearance: none;
 }
 .search_box a{
 	display: block;
