@@ -18,7 +18,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #fef3ee;
-	
+
 }
 .wrapper_box{
 	height: 100%;
@@ -99,6 +99,9 @@ body {
 .search_instr{
 	width:100%;
 	height:50%;
+	position: fixed;
+	top:50%;
+	left: 0;
 }
 
 .search_instr h5{ 
