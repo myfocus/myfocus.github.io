@@ -22,6 +22,7 @@ body {
 .wrapper_box{
 	height: 100%;
 	overflow: hidden;
+	position: relative;
 }
 .logo_and_search{
 	width: 100%;
