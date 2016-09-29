@@ -82,8 +82,6 @@ body {
 	float: left;
 	font-family: inherit;
     display: block;
-    /*-webkit-appearance: none;
-    appearance: none;*/
 }
 .search_box a{
 	display: block;
