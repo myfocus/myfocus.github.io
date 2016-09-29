@@ -19,7 +19,7 @@
                     <a href="javascript:;" class="taobao_logo"></a>
                 </h1>
             </div>
-            <div class="search_box" style="position: fixed;left:0.3rem; top:3.34rem;" id="box">
+            <div class="search_box">
                 <i></i>
                 <input id="keywords" type="text" name="" value="" placeholder="搜淘宝/天猫宝贝 得口粮">
                 <a href="javascript:search();">搜索</a>
@@ -56,26 +56,13 @@
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript">
     $(function(){
-        var viewTop = $(window).scrollTop();            // 可视区域顶部
-        var viewBottom = viewTop + window.innerHeight;  // 可视区域底部
-
-        alert("viewTop"+viewTop);
-        alert("viewTop"+viewBottom);
-
-        var elementTop = $('#box').offset().top;//$element是保存的input 元素顶部位置
-        var elementBottom = elementTop + $('#box').height();//元素底部位置
-        alert("elementTop"+elementTop);
-        alert("elementBottom"+elementBottom);
-        scrolltop();
-        function scrolltop(){
-            /* Act on the event */
-            $('#keywords').on('keyup',function(){
-                $(window).scrollTop(elementBottom);
-            })
-            
-        };
-
-        
+       $('#keywords').on('focus',function(){  
+            $('.search_instr').css('position','static');  
+            //或者$('#viewport').height($(window).height()+'px');  
+        }).on('blur',function(){  
+            $('.search_instr').css({'position':'fixed','bottom':'0'});  
+            //或者$('#viewport').height('auto');  
+        });   
     })
 </script>
 </html>
