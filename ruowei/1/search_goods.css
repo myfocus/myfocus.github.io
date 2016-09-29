@@ -10,6 +10,7 @@ html{
 }
 body {
 	height: 100%;
+	background-color: #fef3ee;
 }
 .wrapper {
 	position: relative;
@@ -26,7 +27,7 @@ body {
 }
 .logo_and_search{
 	width: 100%;
-	height: 50%;
+	height: 5.9rem;
 	background: url(mall/logo_bg.png) no-repeat;
 	background-size: 100% 100%;
 	overflow: hidden;
@@ -74,8 +75,8 @@ body {
 	width: 4.8rem;
 	font: 0.28rem arial;
 	margin-left: 0.3rem;
-	padding:0.27rem 0;
-	line-height:0.28rem !important;
+	line-height: 0.2rem 0;
+	line-height:0.4rem !important;
 	outline: 0;
 	border: none;
 	float: left;
@@ -100,7 +101,6 @@ body {
 .search_instr{
 	width:100%;
 	height:50%;
-	background-color: #fef3ee;
 	padding-top:1.3rem;
 }
 
