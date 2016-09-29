@@ -72,7 +72,7 @@ body {
 }
 .search_box input{
 	width: 4.8rem;
-	font-size: 0.28rem;
+	font: 0.28rem arial;
 	margin-left: 0.3rem;
 	padding:0.27rem 0;
 	line-height:0.28rem !important;
