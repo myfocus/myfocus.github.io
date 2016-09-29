@@ -57,10 +57,10 @@
 <script type="text/javascript">
     $(function(){
        $('#keywords').on('focus',function(){  
-            $('.search_instr').css('position','static');  
+            $('.search_instr').css({'position':'static','top':'50%'}); 
             //或者$('#viewport').height($(window).height()+'px');  
         }).on('blur',function(){  
-            $('.search_instr').css({'position':'fixed','bottom':'0'});  
+            $('.search_instr').css({'position':'fixed','top':'50%'});  
             //或者$('#viewport').height('auto');  
         });   
     })
