@@ -245,8 +245,8 @@ body {
 }
 .querytel_input{
 	width:5.38rem;
-	height: 0.98rem;
-	line-height: 0.98rem;
+	padding: 0.33rem 0;
+    line-height: 0.32rem !important;
 	padding-left: 1.16rem;
 	font-size: 0.32rem;
 	display:block; 
