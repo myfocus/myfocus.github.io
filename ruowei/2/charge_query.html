@@ -17,15 +17,39 @@
         <div class="user_infobox">
             <div class="user_querytel">
                 <i class="querytel_icon"></i>
-                <input type="text" name="" value="" placeholder="请输入手机号" class="querytel_input">
+                <input type="text" name="" value="" placeholder="请输入手机号" class="querytel_input" id="querytel">
             </div>
             <div class="user_querypwd">
                 <i class="querypwd_icon"></i>
-                <input type="text" name="" value="" placeholder="请输入验证码" class="querytel_input">
+                <input type="text" name="" value="" placeholder="请输入验证码" class="querytel_input" id="querypwd">
                 <a href="javascript:;" class="auth_code">获取验证码</a>
             </div>
             <a href="javascript:;" class="query_search_btn">查询</a>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#querytel').on('focus', function(event) {
+                event.preventDefault();
+                /* Act on the event */
+                $(this).parent().find('i').addClass('querytel_icon_on');
+            });
+            $('#querytel').on('blur', function(event) {
+                event.preventDefault();
+                /* Act on the event */
+                $(this).parent().find('i').removeClass('querytel_icon_on');
+            });
+            $('#querypwd').on('focus', function(event) {
+                event.preventDefault();
+                /* Act on the event */
+                $(this).parent().find('i').addClass('querypwd_icon_on');
+            });
+            $('#querypwd').on('blur', function(event) {
+                event.preventDefault();
+                /* Act on the event */
+                $(this).parent().find('i').removeClass('querypwd_icon_on');
+            });
+        });
+    </script>
 </body>
 </html>
