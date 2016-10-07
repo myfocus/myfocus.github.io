@@ -245,15 +245,17 @@ body {
 }
 .querytel_input{
 	width:5.38rem;
-	padding: 0.28rem 0;
-    line-height: 0.4rem !important;
-	padding-left: 1.16rem;
+	height: 0.32rem;
+    line-height: 0.32rem !important;
+	_padding-left: 1.16rem;
 	font-size: 0.32rem;
 	display:block; 
 	border-radius:0.49rem;
 	outline: none;
 	border:none;
-
+	position: absolute;
+	top:0.28rem;
+	left: 1.16rem;
 }
 
 .auth_code{
