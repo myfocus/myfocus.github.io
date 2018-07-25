@@ -1,9 +1,2 @@
-# myfocus.github.io
-测试搜骥
+# myfocus的个人博客
 
-
-个人站
-
-
-
-公司项目
